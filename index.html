@@ -26,11 +26,22 @@
             <li class="navbar__item">
               <a class="navbar__link" href="#">Categories</a>
             </li>
-            <li class="navbar__item">
-              <a id="about" class="navbar__link" href="#">About Us</a>
+            <li id="about1" class="navbar__item">
+              <a class="navbar__link" href="#">About Us</a>
+              <ul class="ab-down">
+                <li class="down-item">
+                  <a href="#" class="down-link">News</a>
+                </li>
+                <li class="down-item">
+                  <a href="#" class="down-link">Careers</a>
+                </li>
+                <li class="down-item">
+                  <a href="#" class="down-link">Locations</a>
+                </li>
+              </ul>
             </li>
             <li class="navbar__item">
-              <a id="about" class="navbar__link" href="#">Help center</a>
+              <a id="about2" class="navbar__link" href="#">Help center</a>
             </li>
           </ul>
           <div class="navbar__btns btns">
@@ -50,14 +61,29 @@
                 />
               </svg>
             </button>
-            <a class="btns__login" href="#">Login</a>
+            <button id="navbtn" class="btns__login" href="">Login</button>
           </div>
           <img class="navbar__menu" src="./imgs/menu.svg" alt="menu" />
         </nav>
       </div>
     </header>
     <main>
-      <section class="hero"></section>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-carusel">
+            <div class="carusel-slide">
+              <img src="./imgs/hero-car1.png" alt="compact-car" />
+            </div>
+            <div class="carusel-slide">
+              <img src="./imgs/hero-car2.png" alt="sport-car" />
+            </div>
+            <div class="carusel-slide">
+              <img src="./imgs/hero-car3.png" alt="van-car" />
+            </div>
+            <div class="hero-btns"></div>
+          </div>
+        </div>
+      </section>
       <section class="dreams">
         <div class="container">
           <div class="dreams__text-box">
@@ -136,7 +162,6 @@
                   <img src="./imgs/rating1.svg" alt="rating" />
                 </div>
               </li>
-
               <li class="community__item item">
                 <div class="community__userAbout">
                   <img
@@ -169,7 +194,6 @@
                   <img src="./imgs/rating1.svg" alt="rating" />
                 </div>
               </li>
-
               <li class="community__item item">
                 <div class="community__userAbout">
                   <img
@@ -210,12 +234,6 @@
       <section class="rental"></section>
     </main>
     <footer></footer>
-    <script src="./js/cars.js"></script>
-    <script src="js/dream.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/carusel.js"></script>
     <div class="modal">
       <div class="modal__content">
         <button class="modal__del"></button>
@@ -279,8 +297,14 @@
       <div class="modal-btns">
         <a class="btns__tel" href="tel:+1-855-420-0000">+1 855 420 0000</a>
         <button class="btns__mode"></button>
-        <a class="btns__login" href="#">Login</a>
+        <a class="btns__login" href="">Login</a>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/carusel.js"></script>
+    <script src="./js/cars.js"></script>
+    <script src="js/dream.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
