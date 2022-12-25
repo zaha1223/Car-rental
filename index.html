@@ -9,7 +9,32 @@
     <title>Zoov</title>
   </head>
   <body>
-    <header></header>
+    <header class="site-header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="" class="navbar__img">
+            <img src="./imgs/logo.svg" alt="site-logo" />
+          </a>
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a class="navbar__link" href="">Categories</a>
+            </li>
+            <li class="navbar__item">
+              <a id="about" class="navbar__link" href="">About Us</a>
+            </li>
+            <li class="navbar__item">
+              <a id="about" class="navbar__link" href="">Help center</a>
+            </li>
+          </ul>
+          <div class="navbar__btns btns">
+            <a class="btns__tel" href="tel:+1 855 420 0000">+1 855 420 0000</a>
+            <button class="btns__mode"></button>
+            <a class="btns__login" href="#">Login</a>
+          </div>
+          <img class="navbar__menu" src="./imgs/menu.svg" alt="menu" />
+        </nav>
+      </div>
+    </header>
     <main>
       <section class="hero"></section>
       <section class="dreams"></section>
@@ -19,5 +44,71 @@
     </main>
     <footer></footer>
     <script src="./js/main.js"></script>
+    <div class="modal">
+      <div class="modal__content">
+        <button class="modal__del"></button>
+        <h4 class="modal__title">Login</h4>
+        <p class="modal__text">Use the email and password that you login</p>
+      </div>
+      <form class="modal__form">
+        <input
+          class="modal__email"
+          type="email"
+          name="email"
+          placeholder="Email"
+        />
+        <div class="password">
+          <input
+            class="modal__password"
+            type="password"
+            name="password"
+            placeholder="Password"
+          />
+          <button class="modal__password-eye"></button>
+        </div>
+        <a class="modal__forgot" href="#">Forgot password</a>
+      </form>
+      <p class="modal__bottom-text">I want to create an account</p>
+      <a class="modal__login btns__login" href="">Login</a>
+    </div>
+    <div class="modal-response">
+      <div class="modal-top">
+        <a href="./index.html">
+          <img class="modal-logo" src="./imgs/logo.svg" alt="site-logo" />
+        </a>
+        <button class="del_btn"></button>
+      </div>
+      <ul class="modal-about">
+        <a class="modal-response__title" href="#">Categories</a>
+        <a class="modal-link" href="#">
+          <h4 class="modal-ab-title">About Us</h4>
+        </a>
+        <li class="ab-item">
+          <a class="ab-link" href="#">News</a>
+        </li>
+        <li class="ab-item">
+          <a class="ab-link" href="#">Careers</a>
+        </li>
+        <li class="ab-item">
+          <a class="ab-link" href="#">Locations</a>
+        </li>
+      </ul>
+      <ul class="modal-help">
+        <a class="hlp-title-link" href="#">
+          <h4 class="hlp-title">Help center</h4>
+        </a>
+        <li class="hlp__item">
+          <a href="#" class="hlp-link">FAQ</a>
+        </li>
+        <li class="hlp__item">
+          <a href="#" class="hlp-link">Contact us</a>
+        </li>
+      </ul>
+      <div class="modal-btns">
+        <a class="btns__tel" href="tel:+1 855 420 0000">+1 855 420 0000</a>
+        <button class="btns__mode"></button>
+        <a class="btns__login" href="#">Login</a>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,0 +1,297 @@
+.site-header {
+  background: #ffffff;
+  border-bottom: 1.5px solid #e5e7ea;
+  //   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 50px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+  &__img {
+    margin-right: 20px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 196px;
+  }
+  &__item {
+    padding: 18px 16px;
+  }
+  &__link {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+  }
+  &__item:hover {
+    cursor: pointer;
+    background: #f5f5f5;
+    border-radius: 100px;
+  }
+  &__item:active {
+    background: #299764;
+    color: #fff;
+  }
+}
+#about {
+  //   width: 147px;
+  padding-right: 30px;
+}
+#about::after {
+  position: absolute;
+  content: "";
+  right: 9px;
+  background-image: url(../../imgs/arrow.svg);
+  background-position: center;
+  width: 9px;
+  height: 6px;
+  top: 10px;
+}
+.navbar__menu {
+  display: none;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  &__tel {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-right: 24px;
+  }
+  &__mode {
+    width: 58px;
+    height: 58px;
+    border: none;
+    border-radius: none;
+    background: #f5f5f5;
+    border-radius: 100px;
+    margin-right: 16px;
+    background-image: url(../../imgs/moon.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+  }
+  &__login {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 18px 60px 18px 30px;
+    color: #ffffff;
+    background: #299764;
+    border-radius: 100px;
+    background-image: url(../../imgs/login.svg);
+    background-repeat: no-repeat;
+    background-position-x: 90px;
+    background-position-y: center;
+  }
+}
+
+// MOdal
+.modal {
+  display: none;
+  position: absolute;
+  top: 15%;
+  left: 34%;
+  width: 590px;
+  height: auto;
+  background: #ffffff;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 24px 24px 40px 32px;
+  &__content {
+    position: relative;
+  }
+  &__del {
+    position: absolute;
+    right: 0;
+    top: -15px;
+    width: 58px;
+    height: 58px;
+    border: none;
+    background: #f5f5f5;
+    border-radius: 100px;
+    background-image: url(../../imgs/del.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 16px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #555555;
+    margin-bottom: 32px;
+  }
+  &__form {
+    width: 526px;
+    text-align: right;
+    margin-bottom: 26px;
+  }
+  &__email {
+    width: 526px;
+    background: #ffffff;
+    border: none;
+    border-radius: none;
+    border: 1.5px solid #e5e7ea;
+    border-radius: 82px;
+    padding: 18px 0 18px 30px;
+    margin-bottom: 16px;
+  }
+  &__password {
+    width: 526px;
+    background: #ffffff;
+    border: none;
+    border-radius: none;
+    border: 1.5px solid #e5e7ea;
+    border-radius: 82px;
+    padding: 18px 0 18px 30px;
+    margin-bottom: 8px;
+  }
+  &__password-eye {
+    position: absolute;
+    top: 23px;
+    right: 22px;
+    width: 22px;
+    height: 15px;
+    border: none;
+    background-image: url(../../imgs/eye.svg);
+    background-repeat: no-repeat;
+  }
+  &__email::placeholder,
+  &__password::placeholder {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #555555;
+  }
+  &__email:focus {
+    border-radius: none;
+    border-color: white;
+  }
+  &__forgot {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    color: #555555;
+  }
+  &__bottom-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 32px;
+  }
+  &__login {
+    display: inline-block;
+    padding: 18px 252px 18px 222px;
+    background-position-x: 280px;
+  }
+}
+.password {
+  position: relative;
+}
+
+//responsive  modal
+.modal-response {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #ffffff;
+  height: 100vh;
+  padding: 24px 24px 40px 30px;
+}
+.modal-top {
+  display: flex;
+  //   justify-content: space-between;
+}
+.modal-logo {
+  width: 150px;
+  height: 40px;
+  margin-right: 213px;
+  margin-bottom: 57px;
+}
+.del_btn {
+  width: 58px;
+  height: 58px;
+  border: none;
+  background: #f5f5f5;
+  border-radius: 100px;
+  background-image: url(../../imgs/del.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.modal-response__title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: right;
+  color: #000000;
+  display: inline-block;
+  margin-bottom: 52px;
+}
+.modal-about {
+  margin-bottom: 52px;
+}
+.modal-ab-title,
+.hlp-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.ab-link,
+.hlp-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: right;
+  color: #555555;
+}
+.ab-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.hlp__item {
+  margin-bottom: 16px;
+}
+.modal-btns {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1239px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar__list {
+    display: none;
+  }
+  .btns {
+    display: none;
+  }
+  .navbar__menu {
+    display: block;
+  }
+}
