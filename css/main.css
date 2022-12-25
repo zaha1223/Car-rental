@@ -122,17 +122,43 @@ body {
   cursor: pointer;
   background: #f5f5f5;
   border-radius: 100px;
+  color: #000000;
 }
 .navbar__item:active {
-  background: #299764;
+  background-color: #299764;
   color: #fff;
 }
 
-#about {
+#about1 {
+  position: relative;
   padding-right: 30px;
 }
 
-#about::after {
+#about1::after {
+  position: absolute;
+  content: "";
+  right: 9px;
+  background-image: url(../../imgs/arrow.svg);
+  background-position: center;
+  width: 9px;
+  height: 6px;
+  top: 26px;
+}
+
+#about1:active {
+  color: #fff;
+}
+
+#about1:hover::after {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+#about2 {
+  padding-right: 30px;
+}
+
+#about2::after {
   position: absolute;
   content: "";
   right: 9px;
@@ -143,9 +169,44 @@ body {
   top: 10px;
 }
 
-#about:hover::after {
+#about2:hover::after {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
+}
+
+.ab-down {
+  position: absolute;
+  top: 55px;
+  left: -21px;
+  padding: 10px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  display: none;
+}
+
+.down-link {
+  display: inline-block;
+  padding: 18px 60px 18px 16px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  border-radius: 100px;
+}
+
+.open {
+  display: block;
+}
+
+.down-link:hover {
+  background: #f5f5f5;
+}
+
+.down-link:active {
+  background: #299764;
+  color: #fff;
 }
 
 .navbar__menu {
@@ -190,10 +251,23 @@ body {
   color: #ffffff;
   background: #299764;
   border-radius: 100px;
+}
+.btns__login::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 35px;
   background-image: url(../../imgs/login.svg);
   background-repeat: no-repeat;
-  background-position-x: 90px;
-  background-position-y: center;
+  background-position-y: 1px;
+  background-position-x: 3px;
+}
+.btns__login:hover {
+  background: #077743;
+}
+.btns__login:active {
+  background: #f5f5f5;
+  color: #000000;
 }
 
 .moon:hover path {
@@ -205,7 +279,6 @@ body {
 }
 
 .modal {
-  display: none;
   position: absolute;
   top: 15%;
   left: 34%;
@@ -216,6 +289,7 @@ body {
           box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 24px 24px 40px 32px;
+  display: none;
 }
 .modal__content {
   position: relative;
@@ -796,11 +870,8 @@ body {
 }
 
 .dreams__card-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 3fr 3fr;
   gap: 20px;
 }
 

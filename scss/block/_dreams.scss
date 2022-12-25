@@ -38,8 +38,8 @@
 	}
 }
 .dreams__card-box {
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 3fr 3fr;
 	gap: 20px;
 }
 .dreams__card {

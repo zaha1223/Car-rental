@@ -1,1 +1,2 @@
-$('.community__left').slick();
+$(".community__left").slick();
+
