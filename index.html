@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Zoov</title>
   </head>
   <body>
@@ -19,18 +24,32 @@
           </a>
           <ul class="navbar__list">
             <li class="navbar__item">
-              <a class="navbar__link" href="">Categories</a>
+              <a class="navbar__link" href="#">Categories</a>
             </li>
             <li class="navbar__item">
-              <a id="about" class="navbar__link" href="">About Us</a>
+              <a id="about" class="navbar__link" href="#">About Us</a>
             </li>
             <li class="navbar__item">
-              <a id="about" class="navbar__link" href="">Help center</a>
+              <a id="about" class="navbar__link" href="#">Help center</a>
             </li>
           </ul>
           <div class="navbar__btns btns">
-            <a class="btns__tel" href="tel:+1 855 420 0000">+1 855 420 0000</a>
-            <button class="btns__mode"></button>
+            <a class="btns__tel" href="tel:+1-855-420-0000">+1 855 420 0000</a>
+            <button class="btns__mode">
+              <svg
+                class="moon"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.99998 0.208252C3.69676 0.208252 0.208313 3.6967 0.208313 7.99992C0.208313 12.3031 3.69676 15.7916 7.99998 15.7916C12.0495 15.7916 15.377 12.7027 15.7558 8.75226C15.7734 8.56841 15.6789 8.39193 15.5162 8.30463C15.3534 8.21732 15.1541 8.23624 15.0107 8.35262C14.2227 8.99207 13.2192 9.37492 12.125 9.37492C9.59367 9.37492 7.54165 7.32289 7.54165 4.79158C7.54165 3.28816 8.26503 1.9538 9.38468 1.11728C9.53272 1.00667 9.59986 0.817986 9.55496 0.63873C9.51005 0.459475 9.36189 0.324721 9.17919 0.296971C8.79438 0.238522 8.40057 0.208252 7.99998 0.208252Z"
+                  fill="#555555"
+                />
+              </svg>
+            </button>
             <a class="btns__login" href="#">Login</a>
           </div>
           <img class="navbar__menu" src="./imgs/menu.svg" alt="menu" />
@@ -39,13 +58,164 @@
     </header>
     <main>
       <section class="hero"></section>
-      <section class="dreams"></section>
-      <section class="community"></section>
+      <section class="dreams">
+        <div class="container">
+          <div class="dreams__text-box">
+            <h2 class="dreams__head">Choose the car of your dreams</h2>
+            <p class="dreams__text">
+              We provide our customers with the most incredible driving
+              emotions.
+              <br />
+              That is why there are only world-class cars in our fleet
+            </p>
+          </div>
+          <div class="dreams__btns">
+            <button class="dreams__btn" id="compactBtn">Compact</button>
+            <button class="dreams__btn" id="sportsBtn">Sports Cars</button>
+            <button class="dreams__btn" id="vansBtn">Vans</button>
+          </div>
+          <ul class="dreams__card-box"></ul>
+          <button class="dreams__main-btn">View all cars</button>
+        </div>
+      </section>
+      <section class="community">
+        <div class="container">
+          <div class="community__box">
+            <div class="community__right">
+              <div class="community__fGoogle">
+                <img
+                  src="./imgs/googleIcon.svg"
+                  class="community__googleIcon"
+                  alt="googleIcon"
+                />
+                <p class="community__GoogleText">From Google</p>
+              </div>
+              <h1 class="community__title">
+                Hear what the community is saying
+              </h1>
+              <div class="community__line"></div>
+              <p class="community__text">
+                More interesting reviews on Instagram
+              </p>
+              <div class="community__btn">
+                <a href="#" class="community__instagram"
+                  ><span>Instagram</span></a
+                >
+              </div>
+            </div>
+            <ul class="community__left">
+              <li class="community__item item">
+                <div class="community__userAbout">
+                  <img
+                    src="./imgs/avatar1.svg"
+                    class="community__avatar"
+                    alt="avatar"
+                  />
+                  <div class="community__aboutTexts">
+                    <h1 class="community__name">Savannah Nguyen</h1>
+                    <p class="community__gmail">savannahnguyen@gmail.com</p>
+                  </div>
+                  <img
+                    src="./imgs/googleIcon.svg"
+                    class="community__googleIcon2"
+                    alt="avatar"
+                  />
+                </div>
+                <div class="community__text2">
+                  Sagittis sed tortor, elementum vitae varius sodales
+                  consectetur. Vitae arcu ut morbi bibendum ullamcorper feugiat.
+                  Venenatis hendrerit cursus egestas sit ornare nunc vulputate
+                  aliquam sapien. Pulvinar nunc consectetur nibh consectetur
+                  mollis mauris est mauris amet. Sed hac vehicula id et dui
+                  morbi quam pulvinar condimentum. Senectus sed varius interdum
+                  nunc, arcu vulputate massa.
+                </div>
+                <hr class="community__hr" />
+                <div class="community__Rating">
+                  <p class="community__RatingText">Start rating:</p>
+                  <img src="./imgs/rating1.svg" alt="rating" />
+                </div>
+              </li>
+
+              <li class="community__item item">
+                <div class="community__userAbout">
+                  <img
+                    src="./imgs/avatar1.svg"
+                    class="community__avatar"
+                    alt="avatar"
+                  />
+                  <div class="community__aboutTexts">
+                    <h1 class="community__name">Savannah Nguyen</h1>
+                    <p class="community__gmail">savannahnguyen@gmail.com</p>
+                  </div>
+                  <img
+                    src="./imgs/googleIcon.svg"
+                    class="community__googleIcon2"
+                    alt="avatar"
+                  />
+                </div>
+                <div class="community__text2">
+                  Sagittis sed tortor, elementum vitae varius sodales
+                  consectetur. Vitae arcu ut morbi bibendum ullamcorper feugiat.
+                  Venenatis hendrerit cursus egestas sit ornare nunc vulputate
+                  aliquam sapien. Pulvinar nunc consectetur nibh consectetur
+                  mollis mauris est mauris amet. Sed hac vehicula id et dui
+                  morbi quam pulvinar condimentum. Senectus sed varius interdum
+                  nunc, arcu vulputate massa.
+                </div>
+                <hr class="community__hr" />
+                <div class="community__Rating">
+                  <p class="community__RatingText">Start rating:</p>
+                  <img src="./imgs/rating1.svg" alt="rating" />
+                </div>
+              </li>
+
+              <li class="community__item item">
+                <div class="community__userAbout">
+                  <img
+                    src="./imgs/avatar1.svg"
+                    class="community__avatar"
+                    alt="avatar"
+                  />
+                  <div class="community__aboutTexts">
+                    <h1 class="community__name">Savannah Nguyen</h1>
+                    <p class="community__gmail">savannahnguyen@gmail.com</p>
+                  </div>
+                  <img
+                    src="./imgs/googleIcon.svg"
+                    class="community__googleIcon2"
+                    alt="avatar"
+                  />
+                </div>
+                <div class="community__text2">
+                  Sagittis sed tortor, elementum vitae varius sodales
+                  consectetur. Vitae arcu ut morbi bibendum ullamcorper feugiat.
+                  Venenatis hendrerit cursus egestas sit ornare nunc vulputate
+                  aliquam sapien. Pulvinar nunc consectetur nibh consectetur
+                  mollis mauris est mauris amet. Sed hac vehicula id et dui
+                  morbi quam pulvinar condimentum. Senectus sed varius interdum
+                  nunc, arcu vulputate massa.
+                </div>
+                <hr class="community__hr" />
+                <div class="community__Rating">
+                  <p class="community__RatingText">Start rating:</p>
+                  <img src="./imgs/rating1.svg" alt="rating" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <section class="service"></section>
       <section class="rental"></section>
     </main>
     <footer></footer>
+    <script src="./js/cars.js"></script>
+    <script src="js/dream.js"></script>
     <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/carusel.js"></script>
     <div class="modal">
       <div class="modal__content">
         <button class="modal__del"></button>
@@ -107,174 +277,10 @@
         </li>
       </ul>
       <div class="modal-btns">
-        <a class="btns__tel" href="tel:+1 855 420 0000">+1 855 420 0000</a>
+        <a class="btns__tel" href="tel:+1-855-420-0000">+1 855 420 0000</a>
         <button class="btns__mode"></button>
         <a class="btns__login" href="#">Login</a>
       </div>
     </div>
   </body>
-=======
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/normalize.css" />
-		<link rel="stylesheet" href="./css/main.css" />
-		<title>Zoov</title>
-	</head>
-	<body>
-		<header></header>
-		<main>
-			<section class="hero"></section>
-			<section class="dreams">
-				<div class="container">
-					<div class="dreams__text-box">
-						<h2 class="dreams__head">
-							Choose the car of your dreams
-						</h2>
-						<p class="dreams__text">
-							We provide our customers with the most incredible driving
-							emotions.
-							<br />
-							That is why there are only world-class cars in our fleet
-						</p>
-					</div>
-
-					<div class="dreams__btns">
-						<button class="dreams__btn" id="compactBtn">Compact</button>
-						<button class="dreams__btn" id="sportsBtn">Sports Cars</button>
-						<button class="dreams__btn" id="vansBtn">Vans</button>
-					</div>
-
-					<ul class="dreams__card-box"></ul>
-
-					<button class="dreams__main-btn">View all cars</button>
-				</div>
-			</section>
-			<section class="community"></section>
-			<section class="service"></section>
-			<section class="rental"></section>
-		</main>
-		<footer></footer>
-		<script src="./js/cars.js"></script>
-		<script src="js/dream.js"></script>
-		<script src="./js/main.js"></script>
-	</body>
->>>>>>> 909728dd44644b9cfadf380165e3d4b582370027
 </html>
-=======
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/normalize.css" />
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Zoov</title>
-</head>
-
-<body>
-  <header></header>
-  <main>
-    <section class="hero"></section>
-    <section class="dreams"></section>
-    <section class="community">
-      <div class="container">
-        <div class="community__box">
-          <div class="community__right">
-            <div class="community__fGoogle">
-              <img src='./imgs/googleIcon.svg' class="community__googleIcon" alt="googleIcon" />
-              <p class="community__GoogleText">From Google</p>
-            </div>
-            <h1 class="community__title">Hear what the community is saying</h1>
-            <div class="community__line"></div>
-            <p class="community__text">More interesting reviews on Instagram</p>
-            <div class="community__btn">
-              <a href="#" class="community__instagram"><span>Instagram</span></a>
-            </div>
-          </div>
-          <ul class="community__left">
-            <li class="community__item item">
-              <div class="community__userAbout">
-                <img src="./imgs/avatar1.svg" class="community__avatar" alt="avatar" />
-                <div class="community__aboutTexts">
-                  <h1 class="community__name">Savannah Nguyen</h1>
-                  <p class="community__gmail">savannahnguyen@gmail.com</p>
-                </div>
-                <img src="./imgs/googleIcon.svg" class="community__googleIcon2" alt="avatar" />
-
-              </div>
-              <div class="community__text2">Sagittis sed tortor, elementum vitae varius sodales consectetur. Vitae arcu
-                ut morbi bibendum ullamcorper feugiat. Venenatis hendrerit cursus egestas sit ornare nunc vulputate
-                aliquam sapien. Pulvinar nunc consectetur nibh consectetur mollis mauris est mauris amet. Sed hac
-                vehicula id et dui morbi quam pulvinar condimentum. Senectus sed varius interdum nunc, arcu vulputate
-                massa.</div>
-              <hr class="community__hr" />
-              <div class="community__Rating">
-                <p class="community__RatingText">Start rating:</p>
-                <img src="./imgs/rating1.svg" alt="rating" />
-              </div>
-            </li>
-
-
-            <li class="community__item item">
-              <div class="community__userAbout">
-                <img src="./imgs/avatar1.svg" class="community__avatar" alt="avatar" />
-                <div class="community__aboutTexts">
-                  <h1 class="community__name">Savannah Nguyen</h1>
-                  <p class="community__gmail">savannahnguyen@gmail.com</p>
-                </div>
-                <img src="./imgs/googleIcon.svg" class="community__googleIcon2" alt="avatar" />
-
-              </div>
-              <div class="community__text2">Sagittis sed tortor, elementum vitae varius sodales consectetur. Vitae arcu
-                ut morbi bibendum ullamcorper feugiat. Venenatis hendrerit cursus egestas sit ornare nunc vulputate
-                aliquam sapien. Pulvinar nunc consectetur nibh consectetur mollis mauris est mauris amet. Sed hac
-                vehicula id et dui morbi quam pulvinar condimentum. Senectus sed varius interdum nunc, arcu vulputate
-                massa.</div>
-              <hr class="community__hr" />
-              <div class="community__Rating">
-                <p class="community__RatingText">Start rating:</p>
-                <img src="./imgs/rating1.svg" alt="rating" />
-              </div>
-            </li>
-
-            <li class="community__item item">
-              <div class="community__userAbout">
-                <img src="./imgs/avatar1.svg" class="community__avatar" alt="avatar" />
-                <div class="community__aboutTexts">
-                  <h1 class="community__name">Savannah Nguyen</h1>
-                  <p class="community__gmail">savannahnguyen@gmail.com</p>
-                </div>
-                <img src="./imgs/googleIcon.svg" class="community__googleIcon2" alt="avatar" />
-
-              </div>
-              <div class="community__text2">Sagittis sed tortor, elementum vitae varius sodales consectetur. Vitae arcu
-                ut morbi bibendum ullamcorper feugiat. Venenatis hendrerit cursus egestas sit ornare nunc vulputate
-                aliquam sapien. Pulvinar nunc consectetur nibh consectetur mollis mauris est mauris amet. Sed hac
-                vehicula id et dui morbi quam pulvinar condimentum. Senectus sed varius interdum nunc, arcu vulputate
-                massa.</div>
-              <hr class="community__hr" />
-              <div class="community__Rating">
-                <p class="community__RatingText">Start rating:</p>
-                <img src="./imgs/rating1.svg" alt="rating" />
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="service"></section>
-    <section class="rental"></section>
-  </main>
-  <footer></footer>
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-  <script src="./js/slick.min.js"></script>
-  <script src="./js/carusel.js"></script>
-</body>
-
-</html>
->>>>>>> e3291eb8f0426cdeae4109e5a88e2402a20014d3
