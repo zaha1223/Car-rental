@@ -70,4 +70,136 @@ body {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.dreams {
+  padding-bottom: 160px;
+}
+
+.dreams__text-box {
+  text-align: center;
+}
+
+.dreams__head {
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.dreams__text {
+  color: #555;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.dreams__btns {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+
+.dreams__btn {
+  border-radius: 50px;
+  padding: 19px 40px;
+  border: none;
+  border: 1.5px solid #e5e7ea;
+  background: #fff;
+  transition: all 0.4s;
+}
+.dreams__btn:hover {
+  background: #f5f5f5;
+}
+.dreams__btn:active {
+  background: #299764;
+  color: white;
+}
+
+.dreams__card-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dreams__card {
+  padding: 30px 24px;
+  background: #f5f5f5;
+  border-radius: 16px;
+  transition: 0.4s all;
+}
+.dreams__card:hover {
+  background-color: #299764;
+}
+
+.dreams__card-head {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.dreams__card-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+  padding-bottom: 15px;
+}
+
+.dreams__card-img {
+  width: 387px;
+  height: auto;
+}
+
+.card__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px 68px;
+}
+
+.card_text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 10px;
+}
+
+.dreams__main-btn {
+  border-radius: 100px;
+  padding: 18px 30px;
+  margin-top: 40px;
+  border: none;
+  color: white;
+  background: #299764;
+}
+
+@media screen and (max-width: 587px) {
+  .dreams__card {
+    padding: 24px 20px;
+  }
+  .dreams__head {
+    font-size: 24px;
+  }
+  .dreams__btn {
+    font-size: 14px;
+    padding: 14px 20px;
+  }
+}
+@media screen and (max-width: 465px) {
+  .dreams__card-img {
+    width: 330px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .dreams__card-img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .dreams__card-img {
+    width: 270px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .dreams__card-img {
+    width: 250px;
+  }
 }/*# sourceMappingURL=main.css.map */
